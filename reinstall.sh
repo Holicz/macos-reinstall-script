@@ -11,6 +11,14 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Get info for git
+print_info "Now git configuration."
+
+FULLNAME="USER INPUT"
+read -p "Fullname: " FULLNAME
+EMAIL="USER INPUT"
+read -p "Email: " EMAIL
+
 # Required config files
 declare -a REQUIRED_FILES=(
   "id_rsa"
@@ -42,22 +50,23 @@ if [ ! -d "/usr/local/bin" ]; then
 fi
 
 # Run the recipes
-/bin/bash ./recipes/install/oh_my_zsh.sh
-/bin/bash ./recipes/install/homebrew.sh
-/bin/bash ./recipes/install/mariadb.sh
-/bin/bash ./recipes/install/symfony.sh
-/bin/bash ./recipes/install/composer.sh
-/bin/bash ./recipes/install/php.sh
-/bin/bash ./recipes/install/apache.sh
-/bin/bash ./recipes/install/appstore_apps.sh
-/bin/bash ./recipes/install/brew_cask_apps.sh
-
-/bin/bash ./recipes/config/ssh_keys.sh
-/bin/bash ./recipes/config/work_directory.sh
-/bin/bash ./recipes/config/finder.sh
-/bin/bash ./recipes/config/dock.sh
-/bin/bash ./recipes/config/aliases.sh
-/bin/bash ./recipes/config/magicprefs.sh
+#/bin/bash ./recipes/install/oh_my_zsh.sh
+#/bin/bash ./recipes/install/homebrew.sh
+#/bin/bash ./recipes/install/mariadb.sh
+#/bin/bash ./recipes/install/symfony.sh
+#/bin/bash ./recipes/install/composer.sh
+#/bin/bash ./recipes/install/php.sh
+#/bin/bash ./recipes/install/apache.sh
+#/bin/bash ./recipes/install/appstore_apps.sh
+#/bin/bash ./recipes/install/brew_cask_apps.sh
+#
+#/bin/bash ./recipes/config/ssh_keys.sh
+#/bin/bash ./recipes/config/work_directory.sh
+#/bin/bash ./recipes/config/finder.sh
+#/bin/bash ./recipes/config/dock.sh
+#/bin/bash ./recipes/config/aliases.sh
+#/bin/bash ./recipes/config/magicprefs.sh
+/bin/bash ./recipes/config/git.sh "$FULLNAME" "$EMAIL"
 
 # Setup database
 print_info "Unfortunately, I can't setup MariaDB for you. You have to do it yourself."
