@@ -18,3 +18,4 @@ Place your SSH keys (`id_rsa` and `id_rsa.pub`), Magicprefs settings (`magicpref
 - [ ] Install and configure FileZilla with this
 - [ ] Configure Finder sidebar
 - [ ] Fix Safari autofill
+- [ ] HandOff is not on the left side of the Dock. Is it a Big Sur problem?
