@@ -53,6 +53,7 @@ fi
 /bin/bash ./recipes/install/oh_my_zsh.sh
 /bin/bash ./recipes/install/homebrew.sh
 /bin/bash ./recipes/install/mariadb.sh
+/bin/bash ./recipes/install/yarn.sh
 /bin/bash ./recipes/install/symfony.sh
 /bin/bash ./recipes/install/composer.sh
 /bin/bash ./recipes/install/php.sh
