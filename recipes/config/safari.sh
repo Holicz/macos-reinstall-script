@@ -8,9 +8,7 @@ defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 # Do not open files after download
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 # Enable developer menu
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
 # Disable auto-correct
 defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool false
 # Disable AutoFill

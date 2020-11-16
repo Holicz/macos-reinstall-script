@@ -17,3 +17,4 @@ Place your SSH keys (`id_rsa` and `id_rsa.pub`), Magicprefs settings (`magicpref
 - [ ] Fix pock sha to install it from brew cask
 - [ ] Install and configure FileZilla with this
 - [ ] Configure Finder sidebar
+- [ ] Fix Safari autofill
