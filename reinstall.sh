@@ -70,6 +70,7 @@ fi
 /bin/bash ./recipes/config/git.sh "$FULLNAME" "$EMAIL"
 /bin/bash ./recipes/config/iterm2.sh
 /bin/bash ./recipes/config/pastebot.sh
+/bin/bash ./recipes/config/magnet.sh
 
 # Setup database
 print_info "Unfortunately, I can't setup MariaDB for you. You have to do it yourself."
