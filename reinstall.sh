@@ -74,6 +74,7 @@ fi
 /bin/bash ./recipes/config/magnet.sh
 /bin/bash ./recipes/config/others.sh
 /bin/bash ./recipes/config/trackpad.sh
+/bin/bash ./recipes/config/keyboard.sh
 
 # Setup database
 print_info "Unfortunately, I can't setup MariaDB for you. You have to do it yourself."
