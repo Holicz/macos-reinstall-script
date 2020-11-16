@@ -64,9 +64,11 @@ fi
 /bin/bash ./recipes/config/work_directory.sh
 /bin/bash ./recipes/config/finder.sh
 /bin/bash ./recipes/config/dock.sh
+/bin/bash ./recipes/config/safari.sh
 /bin/bash ./recipes/config/aliases.sh
 /bin/bash ./recipes/config/magicprefs.sh
 /bin/bash ./recipes/config/git.sh "$FULLNAME" "$EMAIL"
+/bin/bash ./recipes/config/iterm2.sh
 
 # Setup database
 print_info "Unfortunately, I can't setup MariaDB for you. You have to do it yourself."
