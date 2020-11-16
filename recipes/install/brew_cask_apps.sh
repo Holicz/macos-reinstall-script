@@ -7,6 +7,7 @@ print_info "Installing apps from the homebrew cask..."
 
 declare -a APPS=(
   "jetbrains-toolbox"
+  "figma"
   "fork"
   "iterm2"
   "magicprefs"
