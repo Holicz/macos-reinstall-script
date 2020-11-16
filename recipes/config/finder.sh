@@ -16,6 +16,10 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 sudo find / -name ".DS_Store" -delete >/dev/null 2>&1
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
+# Show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Restart Finder
 killall Finder
 

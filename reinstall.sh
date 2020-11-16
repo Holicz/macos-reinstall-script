@@ -59,6 +59,7 @@ fi
 /bin/bash ./recipes/install/apache.sh
 /bin/bash ./recipes/install/appstore_apps.sh
 /bin/bash ./recipes/install/brew_cask_apps.sh
+/bin/bash ./recipes/install/fira_code.sh
 
 /bin/bash ./recipes/config/ssh_keys.sh
 /bin/bash ./recipes/config/work_directory.sh
@@ -71,6 +72,7 @@ fi
 /bin/bash ./recipes/config/iterm2.sh
 /bin/bash ./recipes/config/pastebot.sh
 /bin/bash ./recipes/config/magnet.sh
+/bin/bash ./recipes/config/others.sh
 
 # Setup database
 print_info "Unfortunately, I can't setup MariaDB for you. You have to do it yourself."
