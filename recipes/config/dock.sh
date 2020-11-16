@@ -15,6 +15,8 @@ defaults write com.apple.dock show-recents -bool FALSE
 defaults write com.apple.dock size-immutable -bool yes
 # Set Dock size
 defaults write com.apple.dock tilesize -integer 30
+# Disable launchpad trackpad gesture
+defaults write com.apple.dock showLaunchpadGestureEnabled -bool false
 # Restart Dock
 killall Dock
 
