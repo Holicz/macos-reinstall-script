@@ -13,8 +13,8 @@ fi
 
 sudo cp $FILE_PUB_KEY "$SSH_DIR/$FILE_PUB_KEY"
 sudo cp $FILE_PRIVATE_KEY "$SSH_DIR/$FILE_PRIVATE_KEY"
-chmod 400 "$SSH_DIR/$FILE_PUB_KEY"
-chmod 400 "$SSH_DIR/$FILE_PRIVATE_KEY"
+sudo chmod 400 "$SSH_DIR/$FILE_PUB_KEY"
+sudo chmod 400 "$SSH_DIR/$FILE_PRIVATE_KEY"
 
 print_success "Done copying SSH keys!"
 exit 0
