@@ -31,7 +31,7 @@ perl -i~ -0777 -pe 's/#\n# The following lines prevent .htaccess and .htpasswd f
 
 # Restart Apache
 sudo apachectl -k stop >/dev/null 2>&1
-sudo apachectl start >/dev/null 2>&1
+sudo apachectl -k start >/dev/null 2>&1
 
 print_success "Done installing Apache!"
 exit 0
