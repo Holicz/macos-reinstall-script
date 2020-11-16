@@ -15,7 +15,7 @@ if [ ! -d "$HOME/work/adminer" ]; then
   mkdir "$HOME/work/adminer"
 fi
 
-curl -s -L https://www.adminer.org/latest.php > "$HOME/work/adminer/adminer.php"
+curl -s -L https://www.adminer.org/latest.php > "$HOME/work/adminer/index.php"
 
 print_success "Done configuring work direcotry!"
 exit 0
